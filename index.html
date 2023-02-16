@@ -4,58 +4,213 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-
-    <!-- ===================== google fonts ===================== -->
+    <title>Home</title>
+    <!-- ============================================================ -->
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 
-    <!-- ================== cdnjs-font-awesome ================== -->
+    <!-- ============================================================ -->
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- ============================================================ -->
 
-    <!-- ======================= main.css ======================= -->
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
 
-    <link rel="stylesheet" type="text/css" href="main.css">
-
-    <!-- ======================================================= -->
-
-    <script defer type="text/javascript" src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-    <script defer type="text/javascript" src="main.js"></script>
-
+    <!-- ============================================================ -->
 </head>
 <body>
-    <header>
-        <i class="fa-solid fa-r"></i>
-        <nav class="navLinks">
-            <a href="">Home</a>
-            <a href="">Work</a>
-            <a href="">About</a>
-            <a href="">Service</a>
-            <button id="contact_button">Contact Me</button>
-        </nav>
-    </header>
-    <div id="menu">
-        <hr>
-        <hr>
-        <hr>
-    </div>
-    <section id="content">
-        <h3>Hi , There!</h3>
-        <h1>I Am <span id="multiText"></span></h1>
-        <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam officiis maxime alias impedit doloremque. Tempora, quas! Quisquam, itaque sed totam 
-        </p>
-        <div class="social">
-            <a href="" class="fa-brands fa-twitter"></a>
-            <a href="" class="fa-brands fa-youtube"></a>
-            <a href="" class="fa-brands fa-instagram"></a>
-            <a href="" class="fa-brands fa-facebook"></a>
-            <a href="" class="fa-brands fa-behance"></a>
+    <nav>
+        <div class="container nav-container">
+            <h1>LOGO</h1>
+            <ul class="nav-links">
+                <li><a href="">Home</a></li>
+                <li><a href="">News</a></li>
+                <li><a href="">Stats</a></li>
+                <li><a href="">Table</a></li>
+                <li><a href="">About Us</a></li>
+            </ul>    
         </div>
-        <button>more about me</button>
+    </nav>
+    <header>
+        <div class="container header-container">
+            <div class="banner-left">
+                <h1>Enjoy the beautiful game</h1>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio laboriosam quae voluptas. Cum, quos tempore. Dolorum, repudiandae maxime nesciunt quibusdam iure eius illo ab architecto deserunt blanditiis! Facilis illum quas alias, blanditiis in corrupti sunt consectetur? Exercitationem nam soluta obcaecati provident officiis numquam debitis labore corrupti accusantium, reprehenderit eveniet, dolorem nulla dicta sequi praesentium quibusdam, aliquid officia minus vel doloribus sapiente excepturi temporibus distinctio nesciunt. Sed, repellendus delectus! Sunt quibusdam voluptates repudiandae numquam quae blanditiis ea fuga
+                </p>
+                <a href="" class="btn">Learn More</a>
+            </div>
+            <div class="banner-right">
+                <div class="swiper mySwiper1">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="img/cr-mob-1.jpg">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/cr-mob-2.jpg">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/cr-mob-3.jpg">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/cr-mob-4.jpg">
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>    
+                </div>
+            </div>    
+        </div>
+    </header>
+
+    <section class="sec1">
+        <div class="container section-container">
+<!-- ======================================================================================================================== -->
+            <div class="swiper mySwiper2">
+                <div class="swiper-wrapper">
+
+                    <div class="box swiper-slide">
+                        <article class="content">
+                            <img src="img/cr-2.jpg" class="images">
+                            <h3>Ronaldooooo !!!</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi repellat, quibusdam quasi provident natus vero architecto amet! Soluta, eligendi consectetur.</p>
+                            <a href="" class="btn">Read</a> 
+                        </article>
+                    </div>
+                    <div class="box swiper-slide">
+                        <article class="content">
+                            <img src="img/cr-5.jpg" class="images">
+                            <h3>Ronaldooooo !!!</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi repellat, quibusdam quasi provident natus vero architecto amet! Soluta, eligendi consectetur.</p>
+                            <a href="" class="btn">Read</a> 
+                        </article>
+                    </div>
+                    <div class="box swiper-slide">
+                        <article class="content">
+                            <img src="img/cr-1.jpg" class="images">
+                            <h3>Ronaldooooo !!!</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi repellat, quibusdam quasi provident natus vero architecto amet! Soluta, eligendi consectetur.</p>
+                            <a href="" class="btn">Read</a> 
+                        </article>
+                    </div>
+                    <div class="box swiper-slide">
+                        <article class="content">
+                            <img src="img/cr-3.jpg" class="images">
+                            <h3>Ronaldooooo !!!</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi repellat, quibusdam quasi provident natus vero architecto amet! Soluta, eligendi consectetur.</p>
+                            <a href="" class="btn">Read</a> 
+                        </article>
+                    </div>
+                    <div class="box swiper-slide">
+                        <article class="content">
+                            <img src="img/cr-2.jpg" class="images">
+                            <h3>Ronaldooooo !!!</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi repellat, quibusdam quasi provident natus vero architecto amet! Soluta, eligendi consectetur.</p>
+                            <a href="" class="btn">Read</a> 
+                        </article>
+                    </div>
+                    <div class="box swiper-slide">
+                        <article class="content">
+                            <img src="img/cr-5.jpg" class="images">
+                            <h3>Ronaldooooo !!!</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi repellat, quibusdam quasi provident natus vero architecto amet! Soluta, eligendi consectetur.</p>
+                            <a href="" class="btn">Read</a> 
+                        </article>
+                    </div>
+                    <div class="box swiper-slide">
+                        <article class="content">
+                            <img src="img/cr-1.jpg" class="images">
+                            <h3>Ronaldooooo !!!</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi repellat, quibusdam quasi provident natus vero architecto amet! Soluta, eligendi consectetur.</p>
+                            <a href="" class="btn">Read</a> 
+                        </article>
+                    </div>
+                    <div class="box swiper-slide">
+                        <article class="content">
+                            <img src="img/cr-3.jpg" class="images">
+                            <h3>Ronaldooooo !!!</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi repellat, quibusdam quasi provident natus vero architecto amet! Soluta, eligendi consectetur.</p>
+                            <a href="" class="btn">Read</a> 
+                        </article>
+                    </div>            
+                    <div class="box swiper-slide">
+                        <article class="content">
+                            <img src="img/cr-2.jpg" class="images">
+                            <h3>Ronaldooooo !!!</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi repellat, quibusdam quasi provident natus vero architecto amet! Soluta, eligendi consectetur.</p>
+                            <a href="" class="btn">Read</a> 
+                        </article>
+                    </div>
+                    <div class="box swiper-slide">
+                        <article class="content">
+                            <img src="img/cr-5.jpg" class="images">
+                            <h3>Ronaldooooo !!!</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi repellat, quibusdam quasi provident natus vero architecto amet! Soluta, eligendi consectetur.</p>
+                            <a href="" class="btn">Read</a> 
+                        </article>
+                    </div>
+                    <div class="box swiper-slide">
+                        <article class="content">
+                            <img src="img/cr-1.jpg" class="images">
+                            <h3>Ronaldooooo !!!</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi repellat, quibusdam quasi provident natus vero architecto amet! Soluta, eligendi consectetur.</p>
+                            <a href="" class="btn">Read</a> 
+                        </article>
+                    </div>
+                    <div class="box swiper-slide">
+                        <article class="content">
+                            <img src="img/cr-3.jpg" class="images">
+                            <h3>Ronaldooooo !!!</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi repellat, quibusdam quasi provident natus vero architecto amet! Soluta, eligendi consectetur.</p>
+                            <a href="" class="btn">Read</a> 
+                        </article>
+                    </div>            
+
+                </div>
+                
+                <div class="swiper-pagination"></div>
+
+            </div>
+<!-- ======================================================================================================================== -->
+        </div>
     </section>
+
+    <footer>
+        <div class="container footer-container">
+            <div class="desc">
+                <h3>LOGO</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, deleniti?</p>    
+            </div>
+            <div>
+                <ul>
+                    <li><h3>Explore</h3></li>
+                    <li  class="footer-links" ><a href="">Home</a></li>
+                    <li  class="footer-links" ><a href="">News</a></li>
+                    <li  class="footer-links" ><a href="">Stats</a></li>
+                    <li  class="footer-links" ><a href="">Table</a></li>
+                    <li  class="footer-links" ><a href="">About Us</a></li>
+                </ul>      
+            </div>
+            <div class="privacy">
+                <h3>Primacy</h3>
+                <a href="">Privace Policy</a>
+                <a href="">Terms and Conditions</a>
+                <a href="">Refund Policy</a>
+            </div>
+            <div class="contact">
+                <h3>Contact Us</h3>
+                <span>+91 2273200938</span>
+                <span>example@abcd.com</span>
+                <span>
+                    social
+                </span>
+            </div>
+        </div>
+        <span class="copyright">COPYRIGHT &#xA9; 2023 TRADEMARK </span>
+    </footer>
 </body>
 </html>
