@@ -1,18 +1,16 @@
 
 :root {
-    --l1 : #131313;
-    --l2 : #21170e;
+    --l1 : #E7FEFD;
+    --l2 : #E7FEFD;
 
-    --c1 : #ED254E;
-    --c11: #d3969d;
-    --c12 : #842336;
-    --c2 : blue;
-    --c3 : #B9B9B9;
+    --c1 : #CE4257;
+    --c11: #B22E42;
+    --c2 : #4056F4;
+    --c21: ;
 
     --bg1 : #E8F1F2;
 
     --wl : 86%;
-    --wl2 : 88%;
 
     --trans : all 400ms ease;
 }
@@ -31,13 +29,12 @@ html {
 }
 body {
     font-family: 'Poppins', sans-serif;
-    background-color: var(--bg1);
+    background: linear-gradient(black, 95%, var(--c1));
 }
 
 
 nav, header, section {
     width : 100%;
-    margin-bottom : 2rem;
 }
 
 img {
@@ -81,10 +78,10 @@ h1 {
     width: fit-content;
     display: inline;
 
-    color : var(--bg1);
-    padding : 0.7rem 1.4rem;
+    color : var(--l2);
+    padding : 0.4rem 1.2rem;
 
-    font-weight: 500;
+    font-weight: 600;
     background-color: var(--c2);
 
     border: 1px solid transparent;
@@ -124,10 +121,10 @@ nav {
 
 
 .nav-links li a{
-    padding : 1rem 2rem;
+    padding : 0.6rem 1.2rem;
     font-size : 2rem;
     font-weight: 600;
-    border : 1px solid transparent;
+    border : 2px solid transparent;
     border-radius: 2rem;
 }
 
@@ -140,15 +137,14 @@ nav {
 
 header {
     height: 80vh;
-    margin-top : 15rem;
-    /* background-color: blue; */
+    margin-top : 14rem;
+    margin-bottom: 10rem;
 }
 
 .header-container {
     display: grid;
-    grid-template-columns: 70% 30%;
+    grid-template-columns: 66% 34%;
     border-radius: 2rem;
-    /* background: linear-gradient(to bottom right, var(--c1), var(--c11)); */
 }
 
 
@@ -160,19 +156,15 @@ header {
     flex-direction: column;
     justify-content: center;
 
-    /* border : 1px solid black; */
+}
+
+.banner-left {
 }
 
 .banner-left h1 {
     font-size: 6rem;
     text-transform: capitalize;
-    margin-bottom: 4rem;
-
-    /* background: linear-gradient(red,yellow);
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text; */
-    
+    margin-bottom: 4rem;    
 }
 
 .banner-left p {
@@ -186,13 +178,24 @@ header {
     font-weight: 700;
     background-color: transparent;
     transition: all 200ms ease;
-    /* transition: var(--trans); */
 }
 
 .banner-left .btn:hover {
-    color: var(--bg1);
+    color: var(--l2);
     border: 2px solid var(--bg1);
     background-color: var(--c1);
+}
+
+.banner-right {
+    position: relative;
+}
+
+.br-content {
+    width : 40rem;
+    height: 60rem;
+    position: absolute;
+    right: 2.5%;
+    top : 5rem;
 }
 
 .swiper {
@@ -204,13 +207,11 @@ header {
 /* =================================================================================== */
 
 .sec1 {
-    margin-top: 12rem;
-    margin-bottom : 20rem;
+    margin-bottom: 14rem;
 }
 
 .section-container {
-    width: var(--wl2);
-    /* border : 1px solid blue; */
+    width: var(--wl);
 }
 
 .swiper {
@@ -220,17 +221,12 @@ header {
 
 
 .box {
-    /* height: 70vh; */
-
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
-    /* margin-right: 1rem; */
     
     overflow: hidden;
-    /* background-color: blue; */
 }
 
 article {
@@ -240,7 +236,7 @@ article {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background: linear-gradient(var(--c1), var(--c11));
+    background: linear-gradient(var(--c11), 80%, var(--c1));
     border : 1px solid transparent;
     border-radius: 2rem;
 }
@@ -256,17 +252,19 @@ article {
 
 .box article h3 {
     display: inline-block;
-    text-align: left;
+    align-self: flex-start;
+    padding-left: 5%;
     color : var(--l2);
     font-weight: 600;
     margin-bottom: 2rem;
+    /* -webkit-text-stroke: 1px var(--c3); */    
 }
 
 .box article p {
     width: 95%;
+    color : #e2e2e2;
     display: inline-block;
     padding: 0 2.5%;
-    /* border : 1px solid black; */
     margin-bottom: 2rem;
 }
 
@@ -276,61 +274,80 @@ article {
 
 /* =================================================================================== */
 
-footer  * {
-    color: var(--bg1);
-    cursor: pointer;
-}
 footer {
     width: 100%;
-    height: 50vh;
-    background-color: var(--c2);
+    height: 60vh;
+    background: black;
+    box-shadow: inset 0 1px 30px rgba(255,255,255,0.1);
     position: relative;
-    /* margin-bottom: 0; */
+    display: flex;
+}
+
+footer  * {
+    color: var(--l2);
+    font-weight: 600;
+    cursor: pointer;
 }
 
 .footer-container {
-    display: grid;
-    grid-template-columns: repeat(4,1fr);
-}
-
-.footer-container div {
-    height: 50%;
+    height: 60%;
     display: flex;
-    flex-flow: column wrap;
-    justify-content: flex-start;
-    gap : 1rem;
-    /* align-items: center; */  
-    transform: translateY(50%);
-    padding-top: 0;
-    padding-left: 2rem;
-    /* border : 1px solid black; */
+    justify-content: space-between;
+    /* border: 1px solid white; */
 }
 
-.footer-container div h3 {
-    margin-bottom: 1rem;
+.footer-container div{
+    width : 40rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    /* border: 1px solid white; */
 }
 
-.footer-container div a, .footer-container div span {
-    margin : 0.5rem 0;
+.footer-container div:nth-child(1){
+    align-items: flex-start;
 }
 
-.desc h3 {
-    letter-spacing: 0.5rem;
+.footer-container div:nth-child(4){
+    align-items: flex-end;
 }
 
-.desc p {
-    padding-right: 20rem;
+.footer-links div, .privacy div {
+    width: fit-content;
 }
 
-.footer-links {
-    margin : 1rem 0;
+.desc p{
+    display: inline-block;
+    width: 80%;
 }
+
+.contact div {
+    width: fit-content;
+}
+
 
 .copyright {
     position: absolute;
-    bottom: 10px;
+    bottom: 50px;
     display: block;
     width: 100%;
     text-align: center;
 }
 /* =================================================================================== */
+
+.nav-scroll {
+    background: linear-gradient( #000000,80%,#111111);
+    box-shadow: 0px 5px 5px rgba(0,0,0,0.2);
+    opacity: 0.9;
+}
+
+.nav-scroll div h1, .nav-scroll div ul li a {
+    color : var(--l2)
+}
+
+.nav-scroll div ul li a:hover {
+    color : var(--l2);
+    background:none;
+    border: 2px solid var(--bg1);
+}
