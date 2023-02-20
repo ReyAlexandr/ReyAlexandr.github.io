@@ -13,13 +13,20 @@ var swiper = new Swiper(".mySwiper1", {
 
 var swiper2 = new Swiper(".mySwiper2", {
   loop : true,
-  slidesPerView : 3,
-  loopedSlides : 3,
-  // loopPreventsSliding : false,
   pagination: {
     el: ".swiper-pagination",
     dynamicBullets: true,
   },
+  breakpoints : {
+    600: {
+      slidesPerView:1,
+      loopedSlides:1
+    },
+    1100:{
+      slidesPerView : 3,
+      loopedSlides : 3,    
+    }
+  }
 });
 
 /* =============================================================================== */
