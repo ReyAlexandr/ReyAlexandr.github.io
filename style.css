@@ -146,7 +146,6 @@ nav {
 header {
     height: 80vh;
     margin-top : 14rem;
-    margin-bottom: 10rem;
 }
 
 .header-container {
@@ -211,7 +210,8 @@ header {
 /* =================================================================================== */
 
 .sec1 {
-    margin-bottom: 11rem;
+    margin-top : 4rem;
+    margin-bottom: 12rem;
 }
 
 .section-container {
