@@ -202,7 +202,7 @@ header {
     height: 60rem;
 }
 
-.swiper {
+.br-content .swiper {
     width : 40rem;
     height: 60rem;
     border-radius: 2rem;
@@ -211,7 +211,7 @@ header {
 /* =================================================================================== */
 
 .sec1 {
-    margin-bottom: 14rem;
+    margin-bottom: 11rem;
 }
 
 .section-container {
