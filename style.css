@@ -116,7 +116,8 @@ nav ul {
     z-index: 3;
     border-radius: 1.25rem;
 
-    width: 50%;
+    width: 20rem;
+    max-width: 90%;
     height: 40vh;
     background-color: rgba(0, 89, 198, 0.9);
     box-shadow: 1px 1px 5px rgba(0,0,0,0.3);
@@ -239,10 +240,6 @@ nav ul {
     margin-top : 2rem;
     border-radius: 0.5rem ;
     /* background-color: var(--bg-league-title); */
-    
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 .leagues {
@@ -288,4 +285,29 @@ nav ul {
     margin-top: 2rem;
     border-radius: 0.5rem;
     background-color: var(--bg-league-title);
+}
+
+/* ======================================================= */
+
+@media only screen and (max-width:400px) {
+
+    .leagues-section {
+        /* border : 1px solid red; */
+        height: 21.08rem;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+    }
+    .leagues {
+        height: 90%;
+        width: 98%;
+        padding: 1rem 0;
+        height: calc();
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6, 1fr);
+    }
+
+    .matches {
+        height: 6.4rem;
+    }
 }
