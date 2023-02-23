@@ -240,9 +240,7 @@ nav ul {
     margin-top : 1rem;
     border-radius: 0.5rem ;
     
-    display: flex;
-    /* justify-content: center; */
-    /* border: 1px solid blue; */
+    padding-bottom: 0.1rem;
 
     /* to setup scrolling and hide scrollbar */
     overflow: auto;
