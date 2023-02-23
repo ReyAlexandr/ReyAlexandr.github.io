@@ -369,18 +369,10 @@ nav ul {
     font-size: 0.8rem;
     padding-left : 5%;
 
-    overflow: auto;
-    -ms-overflow-style: none;
-    scrollbar-width: none;
-    /* border : 1px solid red; */
-
     position: relative;
     top : -0.3rem;
 }
 
-.news .para p::-webkit-scrollbar {
-    display: none;
-}
 
 .news .para a {
     font-size: 0.5rem;
