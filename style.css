@@ -14,7 +14,7 @@ html {
 
     --header-height-initial : 6rem;
     --header-height : 9rem;
-    --leagues-section-height : 20rem;
+    --leagues-section-height : 21rem;
     --news-height : 10rem;
 
     --width-top-header : calc(var(--width-small)*90/100);
@@ -237,23 +237,38 @@ nav ul {
 .leagues-section {
     width : var(--width-top-header);
     height: var(--leagues-section-height);
-    margin-top : 2rem;
+    margin-top : 1rem;
     border-radius: 0.5rem ;
-    /* background-color: var(--bg-league-title); */
+    
+    display: flex;
+    /* justify-content: center; */
+    /* border: 1px solid blue; */
+
+    /* to setup scrolling and hide scrollbar */
+    overflow: auto;
+    -ms-overflow-style: none; /* from IE and Edge */
+    scrollbar-width: none; /* from Firefox */
+}
+
+/* to hide scrollbar from chrome */
+.leagues-section::-webkit-scrollbar {
+    display: none;
 }
 
 .leagues {
-    width: 100%;
-    height: 100%;
+    width: 98%;
+    height: auto;
+    /* padding-top: 1rem; */
     border-radius: 0.5rem;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap : 2%;
+    column-gap : 0.5rem;
 }
 
 .matches {
     width : 100%;
-    height: 100%;
+    height: 6.5rem;
+    margin: 0.25rem;
 
     display: flex;
     justify-content: space-around;
@@ -291,34 +306,14 @@ nav ul {
 
 @media only screen and (max-width:600px) {
 
-    .leagues-section {
-        /* border : 1px solid red; */
-        height: 21.08rem;
-        overflow: auto;
-        display: flex;
-        justify-content: center;
-
-        /* to hide scrollbar */
-        -ms-overflow-style: none; /* from IE and Edge */
-        scrollbar-width: none; /* from Firefox */
-    }
-
-    /* to hide scrollbar from chrome */
-    .leagues-section::-webkit-scrollbar {
-        display: none;
-    }
-    
-
     .leagues {
-        height: 90%;
         width: 98%;
-        padding: 1rem 0;
-        height: calc();
+        /* padding: 1rem 0rem; */
         grid-template-columns: 1fr;
-        grid-template-rows: repeat(6, 1fr);
+        grid-template-rows: repeat(1fr);
     }
 
     .matches {
-        height: 6.4rem;
+        height: 6.5rem;
     }
 }
