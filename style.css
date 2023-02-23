@@ -371,6 +371,8 @@ nav ul {
 
     position: relative;
     top : -0.3rem;
+
+    overflow: hidden;
 }
 
 
