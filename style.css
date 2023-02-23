@@ -15,7 +15,7 @@ html {
     --header-height-initial : 6rem;
     --header-height : 9rem;
     --leagues-section-height : 21rem;
-    --news-height : 10rem;
+    --news-height : 15rem;
 
     --width-top-header : calc(var(--width-small)*90/100);
     --margin-leagues : calc(var(--header-height)*62.2/100);
@@ -292,12 +292,96 @@ nav ul {
 
 /* ======================================================= */
 
-.news {
+.news-section {
     width : var(--width-top-header);
     height: var(--news-height);
     margin-top: 2rem;
+    /* background-color: var(--bg-league-title); */
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    overflow: hidden;
+    /* overflow: auto; */
+}
+
+.news-section .container {
+    width: 100%;
+    height: 100%;
+    /* border : 1px solid red; */
+    
+    display: grid;
+    gap: 2%;
+    grid-template-rows: repeat(1fr);
+}
+
+.news {
+    width: 100%;
+    height: calc(var(--news-height) / 2);
     border-radius: 0.5rem;
-    background-color: var(--bg-league-title);
+    overflow: hidden;
+    background-color: var(--bg1);
+    box-shadow: 1px 1px 7px rgba(0,0,0,0.3);
+    /* border : 1px solid red; */
+
+    display: flex;
+}
+
+.thumbnail {
+    height: 100%;
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding-left: 2.5%;
+
+    /* border : 1px solid red; */
+}
+
+.thumbnail img {
+    width: auto;
+    height: 80%;
+    border-radius: 0.5rem;
+}
+
+.news .para {
+    width: auto;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.news .para p {
+    display: inline-block;
+    height: 50%;
+    width: auto;
+    font-size: 0.8rem;
+    padding-left : 5%;
+
+    overflow: auto;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    /* border : 1px solid red; */
+
+    position: relative;
+    top : -0.3rem;
+}
+
+.news .para p::-webkit-scrollbar {
+    display: none;
+}
+
+.news .para a {
+    font-size: 0.5rem;
+    color : var(--bg2);
+    
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
 }
 
 /* ======================================================= */
