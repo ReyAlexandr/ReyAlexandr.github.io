@@ -297,7 +297,18 @@ nav ul {
         overflow: hidden;
         display: flex;
         justify-content: center;
+
+        /* to hide scrollbar */
+        -ms-overflow-style: none; /* from IE and Edge */
+        scrollbar-width: none; /* from Firefox */
     }
+
+    /* to hide scrollbar from chrome */
+    .leagues-section::-webkit-scrollbar {
+        display: none;
+    }
+    
+
     .leagues {
         height: 90%;
         width: 98%;
