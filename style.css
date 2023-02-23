@@ -294,7 +294,7 @@ nav ul {
     .leagues-section {
         /* border : 1px solid red; */
         height: 21.08rem;
-        overflow: hidden;
+        overflow: auto;
         display: flex;
         justify-content: center;
 
