@@ -5,10 +5,12 @@ html {
 :root {
     --bg1 : #fff;
     --bg2 : #0058C6;
+    --bg3 : #FFD52B;
     --bg-league-title : #BFBBBA;
 
     --ld1 : #000;
     --ll1 : #EFFEFF;
+    --lb1 : #0E376E;
 
     --width-small : 95%;
     --width-mediam : 85%;
@@ -146,6 +148,7 @@ nav ul {
     display:flex;
     justify-content: space-around;
     align-items: center;
+    cursor: pointer;
 }
 
 .top-header.match-started div{
@@ -198,7 +201,7 @@ nav ul {
 
 /* ======================================================= */
 
-.league-titles {
+.league-titles, .section-titles {
     width : var(--width-top-header);
     margin-top: 2rem;
     border-radius: 0.5rem;
@@ -208,7 +211,7 @@ nav ul {
     /* border : 1px solid black; */
 }
 
-.league-titles.match-started { 
+.league-titles.match-started, .section-titles.match-started{ 
     margin-top: var(--margin-leagues);
 }
 
@@ -239,18 +242,22 @@ nav ul {
 
 /* ======================================================= */
 
-.leagues-section {
+.leagues-section, .details-section {
     width : var(--width-top-header);
     height: var(--leagues-section-height);
-    margin-top : 1rem;
+    margin-top : 2rem;
     border-radius: 0.5rem ;
-    
     padding-bottom: 0.1rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
     /* to setup scrolling and hide scrollbar */
     overflow: auto;
     -ms-overflow-style: none; /* from IE and Edge */
     scrollbar-width: none; /* from Firefox */
+    /* border: 1px solid black; */
 }
 
 /* to hide scrollbar from chrome */
@@ -258,11 +265,11 @@ nav ul {
     display: none;
 }
 
-.leagues {
+.leagues, .details{
     width: 98%;
     height: auto;
-    /* padding-top: 1rem; */
     border-radius: 0.5rem;
+
     display: grid;
     grid-template-columns: 1fr 1fr;
     column-gap : 0.5rem;
@@ -288,17 +295,16 @@ nav ul {
     font-size: 1.5rem;
     margin: 0.4rem 0;
 }
+
 .matches .score-time .time {
     font-size: 0.7rem;
     color: black;
 }
 
-
 .matches .score-time {
     top: 0;
     /* border: 1px solid black; */
 }
-
 
 .matches .team-logos {
     width: 3rem;
