@@ -3,10 +3,6 @@
     --details-section-height : 50rem;
 }
 
-.top-header {
-    z-index: 5;
-}
-
 #current-match-name {
     visibility: hidden;
 }
