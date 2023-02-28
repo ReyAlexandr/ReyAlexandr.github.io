@@ -32,7 +32,7 @@
 .details-section {
     height: var(--details-section-height);
     width : var(--width-top-header);
-    margin-top : 2rem;
+    margin-top : 1rem;
     border-radius: 1rem;
     padding-bottom: 0.1rem;
 
