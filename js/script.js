@@ -6,6 +6,7 @@ var leagueTitles = document.querySelectorAll('.titles span');
 var selectedTitle = document.querySelector('.selected');
 var matches = document.querySelectorAll('.matches');
 
+
 menuBar.addEventListener('click', ()=>{
     menuBar.style.display = "none";
     menuX.style.display = "inline-block";
@@ -31,5 +32,7 @@ leagueTitles.forEach(title => {
 matches.forEach((match, index) => {
     match.addEventListener('click', () => {
         window.location.href = "match.html";
+        localStorage.setItem('homeLogo',match.children[0].children[0].src);
+        localStorage.setItem('awayLogo',match.children[2].children[0].src);
     })
 })

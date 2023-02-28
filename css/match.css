@@ -1,0 +1,11 @@
+.top-header {
+    z-index: 5;
+}
+
+#current-match-name {
+    visibility: hidden;
+}
+
+.match-started .score-time {
+    top : 0rem;
+}
