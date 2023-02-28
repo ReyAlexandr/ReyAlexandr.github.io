@@ -30,10 +30,18 @@
 }
 
 .details-section {
-    border-radius: 1rem;
     height: var(--details-section-height);
+    width : var(--width-top-header);
+    margin-top : 2rem;
+    border-radius: 1rem;
+    padding-bottom: 0.1rem;
+
     background: var(--bg1);
     box-shadow: 0px 1px 5px rgba(0,0,0,0.5);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
     /* border: 1px solid black; */
 }
 
