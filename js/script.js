@@ -40,6 +40,7 @@ matches.forEach((match, index) => {
 
 news.forEach((n, i) => {
     n.addEventListener('click', () => {
-        window.location.href = "news.html";
-    })
-})
+        window.location.href = "single-news.html";
+        localStorage.setItem('thumbnail',n.children[0].children[0].src);
+    });
+});

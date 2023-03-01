@@ -1,0 +1,38 @@
+
+.news-section {
+    height: auto;
+}
+.news-section .container {
+    display: block;
+}
+
+.news {
+    height: 98%;
+}
+
+.news .thumbnail {
+    height: 40%;
+    width: 96%;
+    padding-top: 2%;
+    border-radius: 1rem;
+}
+
+
+.news .thumbnail img {
+    border-radius: 1rem;
+}
+
+.news .para {
+    width: 100%;
+    height: 60%;
+    padding: 1%;
+}
+
+.news .para p {
+    height: 100%;
+    width: 100%;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+    line-height: 2rem;
+    padding: 1rem;
+}
