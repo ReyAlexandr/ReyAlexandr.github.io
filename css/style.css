@@ -346,16 +346,18 @@ nav ul {
 }
 
 .news {
-    width: 100%;
-    margin: 0.25rem 0;
     height: 7rem;
-    border-radius: 0.5rem;
-    overflow: hidden;
-    background-color: var(--bg1);
-    box-shadow: 1px 1px 7px rgba(0,0,0,0.3);
-    /* border : 1px solid red; */
+    width: 100%;
 
+    margin: 0.25rem 0;
+    border-radius: 0.5rem;
+
+    background-color: var(--bg1);
+    box-shadow: 1px 1px 7px rgba(0,0,0,0.3);    
+    
     display: flex;
+    overflow: hidden;
+    cursor: pointer;
 }
 
 /* ================================= */
@@ -402,11 +404,11 @@ nav ul {
 
 
 .news .para a {
-    font-size: 0.5rem;
+    font-size: 0.9rem;
     color : var(--bg2);
     
     position: absolute;
-    bottom: 1rem;
+    bottom: 0.5rem;
     right: 1rem;
 }
 
@@ -512,5 +514,9 @@ footer .container {
 
     .matches {
         height: 6.5rem;
+    }
+
+    .news .para a {
+        font-size: 0.8rem;
     }
 }

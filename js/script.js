@@ -5,6 +5,7 @@ var menu = document.querySelector('.menu');
 var leagueTitles = document.querySelectorAll('.titles span');
 var selectedTitle = document.querySelector('.selected');
 var matches = document.querySelectorAll('.matches');
+var news = document.querySelectorAll('.news');
 
 
 menuBar.addEventListener('click', ()=>{
@@ -34,5 +35,11 @@ matches.forEach((match, index) => {
         window.location.href = "match.html";
         localStorage.setItem('homeLogo',match.children[0].children[0].src);
         localStorage.setItem('awayLogo',match.children[2].children[0].src);
+    })
+})
+
+news.forEach((n, i) => {
+    n.addEventListener('click', () => {
+        window.location.href = "news.html";
     })
 })
