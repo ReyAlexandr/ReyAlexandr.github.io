@@ -209,7 +209,7 @@ nav ul {
     margin : 0 auto;
     margin-top: 2rem;
     overflow: hidden;
-    /* border-radius: 0.5rem; */
+    border-radius: 0.5rem;
     /* border : 1px solid black; */
 }
 
