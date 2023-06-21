@@ -1,0 +1,48 @@
+
+:root {
+    --details-section-height : 50rem;
+}
+
+#current-match-name {
+    visibility: hidden;
+}
+
+.match-started .score-time {
+    top : 0rem;
+}
+
+.section-titles .titles span {
+    font-size: 0.8rem;
+    font-weight: 600;
+    margin :0.5rem;
+    color : var(--lb1);
+    background-color: var(--bg3);
+    border : 2px solid transparent;
+}
+
+.section-titles .titles > .selected {
+    /* border: 2px solid var(--lb1); */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.5);
+}
+
+.details-section {
+    height: var(--details-section-height);
+    width : var(--width-top-header);
+    margin-top : 1rem;
+    border-radius: 1rem;
+    padding-bottom: 0.1rem;
+
+    background: var(--bg1);
+    box-shadow: 0px 1px 5px rgba(0,0,0,0.5);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 1px solid black; */
+}
+
+.details {
+    width: 98%;
+    height: 98%;
+    /* border: 1px solid blue; */
+}
